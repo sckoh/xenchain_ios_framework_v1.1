@@ -65,7 +65,7 @@ Kindly note that the project requires the use of a real physical iOS Device in o
 ## <a name="InitialSetup"></a> Initial Setup
 ### <a name="ProjectTargetSettings"></a> Project Target Settings Setup
 #### <a name="BuildSettingsSetup"></a> Build Settings Setup
-Please follow the image below to setup for the frameworks which is crucial for scanning ID cards.<br>
+Please follow the red oval below to setup for the frameworks which is crucial for scanning ID cards.<br>
 ![alt text](Images/ios_build_search_path.png "Build Settings")
 
 #### <a name="InfoPlistSetup"></a> Info.plist Setup
