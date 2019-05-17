@@ -64,11 +64,11 @@ Kindly note that the project requires the use of a real physical iOS Device in o
 
 ## <a name="InitialSetup"></a> Initial Setup
 ### <a name="ProjectTargetSettings"></a> Project Target Settings Setup
-#### <a Build Settings Setup
+#### <a name="BuildSettingsSetup"></a> Build Settings Setup
 Please follow the image below to setup for the frameworks which is crucial for scanning ID cards.<br>
 ![alt text](Images/ios_build_search_path.png "Build Settings")
 
-#### Info.plist Setup
+#### <a name="InfoPlistSetup"></a> Info.plist Setup
 Kindly add the below configuration setup to allow iOS to bypass the HTTPS checking for Xenchain URL. In addition, please setup Privacy – Camera Usage Description and Privacy – Photo Library Usage Description. Please note that the contents of these Privacy can be anything. Finally, the key for `apiurl` must be replaced and will be provided by Xenchain.
 ```xml
 <key>NSAppTransportSecurity</key>
@@ -90,7 +90,7 @@ Kindly add the below configuration setup to allow iOS to bypass the HTTPS checki
 <string>Upload Image of the User for App Features</string>
 ```
 
-#### Build Phase Setup
+#### <a name="BuildPhaseSetup"></a> Build Phase Setup
 ![alt text](Images/ios_build_phase_script.png "Build Phases")<br>
 Kindly add the script configuration below to remove all the Device Architecture from the Framework as shown in the image above. Please add the script on the very last of the Build Phase. Failure to do so might result in rejection when upload to the Apple Store.
 ```javascript
