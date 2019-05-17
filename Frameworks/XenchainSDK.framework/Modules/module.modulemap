@@ -1,0 +1,6 @@
+framework module XenchainSDK {
+  umbrella header "XenchainSDK.h"
+
+  export *
+  module * { export * }
+}
