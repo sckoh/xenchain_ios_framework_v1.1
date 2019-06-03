@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="40D-Wu-ieI">
+                                <rect key="frame" x="25" y="45" width="325" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3w-qg-fmI">
+                                <rect key="frame" x="25" y="612" width="325" height="30"/>
+                                <state key="normal" title="Start Scan"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FA8-hg-vGb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a3w-qg-fmI" firstAttribute="top" secondItem="40D-Wu-ieI" secondAttribute="bottom" constant="25" id="2zZ-Dx-TX7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="40D-Wu-ieI" secondAttribute="trailing" constant="25" id="6wf-Rb-t7L"/>
+                            <constraint firstItem="40D-Wu-ieI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Dyf-pM-0ZL"/>
+                            <constraint firstItem="a3w-qg-fmI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="OHZ-3Q-CHY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a3w-qg-fmI" secondAttribute="trailing" constant="25" id="TFn-Ib-Mni"/>
+                            <constraint firstItem="40D-Wu-ieI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="fu3-z3-5WY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a3w-qg-fmI" secondAttribute="bottom" constant="25" id="uGg-em-p7m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultsText" destination="40D-Wu-ieI" id="C9m-O2-uvf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="T7U-TO-iAt">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" id="EGd-md-IJn" customClass="CameraViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uVi-bo-H2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQo-f8-NTc">
+                                <rect key="frame" x="25" y="612" width="325" height="30"/>
+                                <state key="normal" title="Exit Scanner"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="EGd-md-IJn" eventType="touchUpInside" id="h8q-7X-xes"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I1c-JJ-BQk" firstAttribute="trailing" secondItem="SQo-f8-NTc" secondAttribute="trailing" constant="25" id="NJj-cc-EhB"/>
+                            <constraint firstItem="I1c-JJ-BQk" firstAttribute="bottom" secondItem="SQo-f8-NTc" secondAttribute="bottom" constant="25" id="TkB-49-ZON"/>
+                            <constraint firstItem="SQo-f8-NTc" firstAttribute="leading" secondItem="I1c-JJ-BQk" secondAttribute="leading" constant="25" id="gPa-Xf-bR8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I1c-JJ-BQk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5W-9B-R6J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1420" y="27"/>
+        </scene>
+    </scenes>
+</document>
