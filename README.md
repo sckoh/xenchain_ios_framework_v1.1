@@ -33,16 +33,18 @@ Jovial Tan (jovial.tan@xenchain.io)<br>
                 <li> Added additional callback function for `XenchainScannerCallback`. </li>
             </ul>
         </td>
-        <td valign="top">1.1.1</td>
-        <td valign="top" style="white-space: nowrap;">Jovial</td>
-        <td valign="top" style="white-space: nowrap;">2019-06-10</td>
-        <td valign="top">
-            <ul>
-                <li> Fixed missing image during the Landmark Checking. </li>
-                <li> Fixed the Gender value missing for MyKad Default Scanning. </li>
-                <li> Updated documentation for library not loaded issue. </li>
-            </ul>
-        </td>
+    </tr>
+    <tr>
+      <td valign="top">1.1.1</td>
+      <td valign="top" style="white-space: nowrap;">Jovial</td>
+      <td valign="top" style="white-space: nowrap;">2019-06-10</td>
+      <td valign="top">
+          <ul>
+              <li> Fixed missing image during the Landmark Checking. </li>
+              <li> Fixed the Gender value missing for MyKad Default Scanning. </li>
+              <li> Updated documentation for library not loaded issue. </li>
+          </ul>
+    </td>
     </tr>
 <table>
 
