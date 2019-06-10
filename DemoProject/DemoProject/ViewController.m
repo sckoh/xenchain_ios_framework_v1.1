@@ -25,7 +25,7 @@ bool canScan = false;
 - (void)viewDidAppear:(BOOL)animated {
     if (firstLoad) {
         firstLoad = false;
-        [XenchainSDK InitSDK:@"SWUSIw7iXlHDcbiAJN_4gpth_Qj382xW" apiURL:@"https://ekyca.ctos.com.my" onPremSaveData:false completionHandler:self];
+        [XenchainSDK InitSDK:@"API Key" apiURL:@"API URL" onPremSaveData:false completionHandler:self];
     }
 }
 
