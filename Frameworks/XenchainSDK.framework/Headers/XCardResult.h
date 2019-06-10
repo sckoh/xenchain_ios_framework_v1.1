@@ -43,6 +43,7 @@
 @property (nonatomic, strong) NSString* mCitizenship;
 @property (nonatomic, strong) NSString* mNationality;
 @property (nonatomic, strong) NSString* mRace;
+@property (nonatomic, strong) NSString* mDrivingLicenseClass;
 
 @property (nonatomic, strong) NSString* mPlaceOfBirth;
 @property (nonatomic, strong) NSString* mDateOfBirth;

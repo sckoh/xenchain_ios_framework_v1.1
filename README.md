@@ -1,6 +1,6 @@
 # <a name="XenchainSDK"></a> Xenchain - iOS
-Docs version: 1.1.0<br>
-Last updated: May 17, 2019
+Docs version: 1.1.1<br>
+Last updated: June 10, 2019
 
 Xenchain SDK for iOS is SDK that allows the use of ID Scanning Features and Face Match capabilities into Android Applications. This version is an overhaul to existing [Xenchain SDK for iOS Platform](https://github.com/XenchainIO/xenchain_ios_framework), featuring improvement of Performance and ease of integration in comparison to older version.
 
@@ -33,6 +33,16 @@ Jovial Tan (jovial.tan@xenchain.io)<br>
                 <li> Added additional callback function for `XenchainScannerCallback`. </li>
             </ul>
         </td>
+        <td valign="top">1.1.1</td>
+        <td valign="top" style="white-space: nowrap;">Jovial</td>
+        <td valign="top" style="white-space: nowrap;">2019-06-10</td>
+        <td valign="top">
+            <ul>
+                <li> Fixed missing image during the Landmark Checking. </li>
+                <li> Fixed the Gender value missing for MyKad Default Scanning. </li>
+                <li> Updated documentation for library not loaded issue. </li>
+            </ul>
+        </td>
     </tr>
 <table>
 
@@ -47,7 +57,14 @@ Jovial Tan (jovial.tan@xenchain.io)<br>
 
 ### <a name="AddSDK"></a> Adding SDK into project
 Kindly note that the project requires the use of a real physical iOS Device in order for the SDK to compile and work properly. Otherwise, will result in either compilation error or no access to the camera.<br>
-*Step 1*: Download XenchainSDK.framework file. Please note that you are required to use Git LFS to download the Frameworks folder. Otherwise, manually download the [XenchainSDK](Frameworks/XenchainSDK.framework/XenchainSDK) and [Microblink](Frameworks/MicroBlink.framework/MicroBlink) files and replace them respectively.<br>
+*Step 1*: Download XenchainSDK.framework file. Please note that you are required to use **Git LFS** to download the Frameworks folder. Otherwise, manually download the [XenchainSDK](Frameworks/XenchainSDK.framework/XenchainSDK) and [Microblink](Frameworks/MicroBlink.framework/MicroBlink) files and replace them respectively as shown below. **Failure to do so will results in App Crash during the `InitSDK` process.** <br>
+![alt text](Images/ios_download_microblink.png "Download Microblink")
+![alt text](Images/ios_replace_microblink.png "Replace Microblink")
+<br/>
+![alt text](Images/ios_download_xenchain.png "Download Xenchain")
+![alt text](Images/ios_replace_xenchain.png "Replace Xenchain")
+<br/>
+
 *Step 2*: On your project import additional frameworks and libraries in the "Linked frameworks and libraries" section of your target settings
 1. libc++.tbd
 2. libz.tbd

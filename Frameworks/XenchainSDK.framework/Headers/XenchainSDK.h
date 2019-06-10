@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char XenchainSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <XenchainSDK_V1_1/PublicHeader.h>
 #import "CardConfig.h"
 #import "PassportConfig.h"
+#import "MyDLConfig.h"
 #import "MyKadConfig.h"
 #import "XCardResult.h"
 

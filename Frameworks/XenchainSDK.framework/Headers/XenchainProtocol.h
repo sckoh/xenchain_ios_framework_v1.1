@@ -24,6 +24,7 @@
  @param message If the SDK was not able to initialize successfully, this variable will provide the general description of the issue.
  */
 
+
 -(void) InitSDKStatus:(bool)status message:(NSString *)message;
 
 @end
