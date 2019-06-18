@@ -148,6 +148,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(void) ProcessFaceMatch:(NSString * _Nonnull)onBoardingID cropImageRef:(NSString * _Nonnull)cropImageRef faceImage:(UIImage * _Nonnull)faceImage completionHandler:(id<XenchainFaceCallback> _Nonnull)completionHandler;
 
++(void) DeployBarcodeScanner:(NSString * _Nonnull)onBoardingID completionHandler:(id<XenchainBarcodeCallback> _Nonnull)completionHandler;
+
 +(void) DeployHologramChecking:(UIViewController * _Nonnull)viewController;
 
 @end

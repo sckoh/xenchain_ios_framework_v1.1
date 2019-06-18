@@ -119,4 +119,23 @@
 
 @end
 
+/**
+ @brief Scan Delegate for Barcode Scanning.
+ */
+@protocol XenchainBarcodeCallback
+
+-(void) BarcodeResult:(NSString *)barcodeValue barcodeImage:(UIImage *)barcodeImage barcodeImageRef:(NSString *)barcodeImageRef error:(NSString *)error;
+
+@end
+
+/**
+ @brief Delegate for Signature Capture.
+ */
+
+@protocol XenchainSignatureCallback
+
+-(void) SignatureResult:(UIImage *)signatureImage signatureImageRef:(NSString *)signatureImageRef error:(NSString *)error;
+
+@end
+
 #endif /* XenchainProtocol_h */
