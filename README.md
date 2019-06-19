@@ -1,6 +1,6 @@
 # <a name="XenchainSDK"></a> Xenchain - iOS
-Docs version: 1.1.2<br>
-Last updated: June 18, 2019
+Docs version: 1.1.3<br>
+Last updated: June 19, 2019
 
 Xenchain SDK for iOS is SDK that allows the use of ID Scanning Features and Face Match capabilities into Android Applications. This version is an overhaul to existing [Xenchain SDK for iOS Platform](https://github.com/XenchainIO/xenchain_ios_framework), featuring improvement of Performance and ease of integration in comparison to older version.
 
@@ -54,6 +54,16 @@ Jovial Tan (jovial.tan@xenchain.io)<br>
           <ul>
               <li> Fixed `DeployFaceMatch` issue on Second Run. </li>
               <li> Optimised the image processing into smaller more compact size. </li>
+          </ul>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top">1.1.3</td>
+      <td valign="top" style="white-space: nowrap;">Jovial</td>
+      <td valign="top" style="white-space: nowrap;">2019-06-19</td>
+      <td valign="top">
+          <ul>
+              <li> Fixed missing Hologram Results details due to JSON format issue. </li>
           </ul>
       </td>
     </tr>
