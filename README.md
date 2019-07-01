@@ -891,3 +891,6 @@ Callback function that provides meta Face Match Results from Face Match Process<
 <b>Parameters:</b>
 * outputBitmap : The Face Image captured during Face Match Process.
 * outputRef : The reference ID of the image captured.
+
+## <a name="MobileApplication"></a> Mobile Application Framework Support for Other Frameworks
+Please note that [Xendity](https://xendity.com) does not support nor encourage the use of other Mobile Application Framework, such as React Native, Angular JS (and its mobile support framework), Appcelerator, and so on, to implement this SDK. Should the Project Requirements requires the use of Mobile Application Framework to build the App, the developers are **required** to build their own wrapper or middleware (A type of interface to interact with this SDK) at their own risk. The support of this SDK will be limited to only for **Native Android (Java/Kotlin) or iOS (Objective-C/Swift)** language support only.
