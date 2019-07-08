@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- @brief Overlay ViewController that will be used as overlay for the Camera UI.
+ @brief Overlay ViewController that will be used as overlay for the ID Scanner Camera UI.
  
  @discussion This class is used to create an UI Overlay for the Camera. In addition, this class also includes callback methods which will be called by the SDK during the ID Scanning process.
  

@@ -124,6 +124,14 @@
  */
 @protocol XenchainBarcodeCallback
 
+/**
+ @brief Delegate function to be called when the Scanner has successfully processed Barcode Image.
+ 
+ @param barcodeValue The value contained in the Barcode Image.
+ @param barcodeImage The image of the barcode captured during the Barcode scanning.
+ @param barcodeImageRef The reference ID of the image captured for Barcode scanning.
+ @param error Any error during the Barcode scanning will be passed in this variable.
+ */
 -(void) BarcodeResult:(NSString *)barcodeValue barcodeImage:(UIImage *)barcodeImage barcodeImageRef:(NSString *)barcodeImageRef error:(NSString *)error;
 
 @end
@@ -134,6 +142,13 @@
 
 @protocol XenchainSignatureCallback
 
+/**
+ @brief Delegate function to be called when the SDK has successfully captured the Signature.
+ 
+ @param signatureImage The image of the Signature captured.
+ @param signatureImageRef The reference ID of the Signature image.
+ @param error Any error during the Signature capture will be passed in this variable.
+ */
 -(void) SignatureResult:(UIImage *)signatureImage signatureImageRef:(NSString *)signatureImageRef error:(NSString *)error;
 
 @end

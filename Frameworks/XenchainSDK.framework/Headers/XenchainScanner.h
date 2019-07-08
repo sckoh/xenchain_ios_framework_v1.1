@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "CardConfig.h"
 #import "XenchainProtocol.h"
+#import "XBarcodeViewController.h"
 #import "XScannerViewController.h"
+#import "XSignatureViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -148,9 +150,35 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(void) ProcessFaceMatch:(NSString * _Nonnull)onBoardingID cropImageRef:(NSString * _Nonnull)cropImageRef faceImage:(UIImage * _Nonnull)faceImage completionHandler:(id<XenchainFaceCallback> _Nonnull)completionHandler;
 
-+(void) DeployBarcodeScanner:(NSString * _Nonnull)onBoardingID completionHandler:(id<XenchainBarcodeCallback> _Nonnull)completionHandler;
+/**
+ @brief Setup and provide View Controller of the Barcode Scanner.
+ 
+ @param onBoardingID Refers to the onBoardingID passed from the `XenchainScannerCallback` protocol. The `onBoardingID` is to ensure that the SDK consider this particular transaction as fully consume for ID Scanning.
+ @param inputController The UIViewController that is used to present the extended class of the `XBarcodeViewController`.
+ @param extendedController The extended class of `XBarcodeViewController` that is used as UI Overlay for the Camera.
+ @param completionHandler Completion Block or Completion Handler used for returning the results of Barcode Scanning. Refer to `XenchainBarcodeCallback` Protocol for further information.
+ 
+ @pre Requires `DeployScanner` to be executed with callbacks return.
+ 
+ @warning Please ensure that the `viewController` param is passed using current presented View Controller. Otherwise, the Camera View Controller will not shown.
+ */
++(void) DeployBarcodeScanner:(NSString * _Nonnull)onBoardingID inputController:(UIViewController * _Nonnull)inputController extendedController:(XBarcodeViewController * _Nonnull)extendedController completionHandler:(id<XenchainBarcodeCallback> _Nonnull)completionHandler;
 
-+(void) DeployHologramChecking:(UIViewController * _Nonnull)viewController;
+/**
+ @brief Setup and provide View Controller of the Signature Capture Feature.
+ 
+ @param onBoardingID Refers to the onBoardingID passed from the `XenchainScannerCallback` protocol. The `onBoardingID` is to ensure that the SDK consider this particular transaction as fully consume for ID Scanning.
+ @param inputController The UIViewController that is used to present the extended class of the `XSignatureViewController`.
+ @param extendedController The extended class of `XSignatureViewController` that is used as UI Overlay for the Signature Capture ViewController.
+ @param completionHandler Completion Block or Completion Handler used for returning the results of processing the Signature. Refer to `XSignatureViewController` Protocol for further information.
+ 
+ @pre Requires `DeployScanner` to be executed with callbacks return.
+ 
+ @warning Please ensure that the `viewController` param is passed using current presented View Controller. Otherwise, the Signature View Controller will not shown.
+ */
++(void) DeploySignatureProcess:(NSString * _Nonnull)onBoardingID inputController:(UIViewController * _Nonnull)inputController extendedController:(XSignatureViewController * _Nonnull)extendedController completionHandler:(id<XenchainSignatureCallback> _Nonnull)completionHandler;
+
+//+(void) DeployHologramChecking:(UIViewController * _Nonnull)viewController;
 
 @end
 
